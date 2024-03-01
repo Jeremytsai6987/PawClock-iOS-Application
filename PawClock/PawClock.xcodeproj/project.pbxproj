@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		438944C12B8D2AB60009490C /* PawClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944C02B8D2AB60009490C /* PawClockApp.swift */; };
+		438944C32B8D2AB60009490C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944C22B8D2AB60009490C /* ContentView.swift */; };
+		438944C52B8D2AB70009490C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438944C42B8D2AB70009490C /* Assets.xcassets */; };
+		438944C82B8D2AB70009490C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438944C72B8D2AB70009490C /* Preview Assets.xcassets */; };
+		438944D22B8D2AB70009490C /* PawClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944D12B8D2AB70009490C /* PawClockTests.swift */; };
+		438944DC2B8D2AB70009490C /* PawClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944DB2B8D2AB70009490C /* PawClockUITests.swift */; };
+		438944DE2B8D2AB70009490C /* PawClockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944DD2B8D2AB70009490C /* PawClockUITestsLaunchTests.swift */; };
+		438944FB2B8D2B400009490C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944EB2B8D2B400009490C /* DataManager.swift */; };
+		438944FC2B8D2B400009490C /* punch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 438944EC2B8D2B400009490C /* punch.mp3 */; };
+		438944FD2B8D2B400009490C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944ED2B8D2B400009490C /* GameView.swift */; };
+		438944FE2B8D2B400009490C /* GameManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944EE2B8D2B400009490C /* GameManagement.swift */; };
+		438944FF2B8D2B400009490C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438944EF2B8D2B400009490C /* Assets.xcassets */; };
+		438945002B8D2B400009490C /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944F02B8D2B400009490C /* AudioManager.swift */; };
+		438945012B8D2B400009490C /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944F12B8D2B400009490C /* PhysicsCategory.swift */; };
+		438945022B8D2B400009490C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438944F32B8D2B400009490C /* Preview Assets.xcassets */; };
+		438945042B8D2B400009490C /* GameControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944F52B8D2B400009490C /* GameControls.swift */; };
+		438945052B8D2B400009490C /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944F62B8D2B400009490C /* GameState.swift */; };
+		438945062B8D2B400009490C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944F72B8D2B400009490C /* GameScene.swift */; };
+		438945082B8D2B400009490C /* backgroundmusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 438944F92B8D2B400009490C /* backgroundmusic.mp3 */; };
+		438945092B8D2B400009490C /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438944FA2B8D2B400009490C /* GameElements.swift */; };
+		438945112B8D2BD10009490C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389450B2B8D2BD10009490C /* HomeView.swift */; };
+		438945122B8D2BD10009490C /* DinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389450C2B8D2BD10009490C /* DinnerView.swift */; };
+		438945132B8D2BD10009490C /* FikaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389450D2B8D2BD10009490C /* FikaView.swift */; };
+		438945142B8D2BD10009490C /* BreakfastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389450E2B8D2BD10009490C /* BreakfastView.swift */; };
+		438945152B8D2BD10009490C /* LunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389450F2B8D2BD10009490C /* LunchView.swift */; };
+		438945162B8D2BD10009490C /* FeedPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945102B8D2BD10009490C /* FeedPetsView.swift */; };
+		438945182B8D2BDF0009490C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945172B8D2BDF0009490C /* SplashScreenView.swift */; };
+		4389451A2B8D2C150009490C /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945192B8D2C150009490C /* SharedViewModel.swift */; };
+		4389451E2B8D2C1E0009490C /* PlayWithPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389451B2B8D2C1D0009490C /* PlayWithPetsView.swift */; };
+		4389451F2B8D2C1E0009490C /* PetActivitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389451C2B8D2C1D0009490C /* PetActivitiesViewModel.swift */; };
+		438945202B8D2C1E0009490C /* MealDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389451D2B8D2C1E0009490C /* MealDetails.swift */; };
+		438945242B8D2C270009490C /* MenuListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945212B8D2C270009490C /* MenuListView.swift */; };
+		438945262B8D2C270009490C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945232B8D2C270009490C /* NotificationManager.swift */; };
+		438945292B8D2C2F0009490C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945272B8D2C2F0009490C /* ImagePicker.swift */; };
+		4389452A2B8D2C2F0009490C /* WalkingPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438945282B8D2C2F0009490C /* WalkingPetsView.swift */; };
+		4389452C2B8D2E300009490C /* GameSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389452B2B8D2E300009490C /* GameSceneView.swift */; };
+		4389452E2B8D5BF10009490C /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4389452D2B8D5BF00009490C /* ScheduleView.swift */; };
+		438945302B8FBD170009490C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4389452F2B8FBD170009490C /* Settings.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		438944CE2B8D2AB70009490C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438944B52B8D2AB60009490C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438944BC2B8D2AB60009490C;
+			remoteInfo = PawClock;
+		};
+		438944D82B8D2AB70009490C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 438944B52B8D2AB60009490C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438944BC2B8D2AB60009490C;
+			remoteInfo = PawClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		438944BD2B8D2AB60009490C /* PawClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PawClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		438944C02B8D2AB60009490C /* PawClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawClockApp.swift; sourceTree = "<group>"; };
+		438944C22B8D2AB60009490C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		438944C42B8D2AB70009490C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		438944C72B8D2AB70009490C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		438944CD2B8D2AB70009490C /* PawClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438944D12B8D2AB70009490C /* PawClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawClockTests.swift; sourceTree = "<group>"; };
+		438944D72B8D2AB70009490C /* PawClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PawClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		438944DB2B8D2AB70009490C /* PawClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawClockUITests.swift; sourceTree = "<group>"; };
+		438944DD2B8D2AB70009490C /* PawClockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PawClockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		438944EB2B8D2B400009490C /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		438944EC2B8D2B400009490C /* punch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = punch.mp3; sourceTree = "<group>"; };
+		438944ED2B8D2B400009490C /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		438944EE2B8D2B400009490C /* GameManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManagement.swift; sourceTree = "<group>"; };
+		438944EF2B8D2B400009490C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		438944F02B8D2B400009490C /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		438944F12B8D2B400009490C /* PhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		438944F32B8D2B400009490C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		438944F52B8D2B400009490C /* GameControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControls.swift; sourceTree = "<group>"; };
+		438944F62B8D2B400009490C /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		438944F72B8D2B400009490C /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		438944F92B8D2B400009490C /* backgroundmusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundmusic.mp3; sourceTree = "<group>"; };
+		438944FA2B8D2B400009490C /* GameElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
+		4389450B2B8D2BD10009490C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4389450C2B8D2BD10009490C /* DinnerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DinnerView.swift; sourceTree = "<group>"; };
+		4389450D2B8D2BD10009490C /* FikaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FikaView.swift; sourceTree = "<group>"; };
+		4389450E2B8D2BD10009490C /* BreakfastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakfastView.swift; sourceTree = "<group>"; };
+		4389450F2B8D2BD10009490C /* LunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LunchView.swift; sourceTree = "<group>"; };
+		438945102B8D2BD10009490C /* FeedPetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedPetsView.swift; sourceTree = "<group>"; };
+		438945172B8D2BDF0009490C /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		438945192B8D2C150009490C /* SharedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		4389451B2B8D2C1D0009490C /* PlayWithPetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayWithPetsView.swift; sourceTree = "<group>"; };
+		4389451C2B8D2C1D0009490C /* PetActivitiesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetActivitiesViewModel.swift; sourceTree = "<group>"; };
+		4389451D2B8D2C1E0009490C /* MealDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetails.swift; sourceTree = "<group>"; };
+		438945212B8D2C270009490C /* MenuListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListView.swift; sourceTree = "<group>"; };
+		438945232B8D2C270009490C /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		438945272B8D2C2F0009490C /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		438945282B8D2C2F0009490C /* WalkingPetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingPetsView.swift; sourceTree = "<group>"; };
+		4389452B2B8D2E300009490C /* GameSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneView.swift; sourceTree = "<group>"; };
+		4389452D2B8D5BF00009490C /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		4389452F2B8FBD170009490C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438944BA2B8D2AB60009490C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944CA2B8D2AB70009490C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944D42B8D2AB70009490C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		438944B42B8D2AB60009490C = {
+			isa = PBXGroup;
+			children = (
+				4389452F2B8FBD170009490C /* Settings.bundle */,
+				438944BF2B8D2AB60009490C /* PawClock */,
+				438944D02B8D2AB70009490C /* PawClockTests */,
+				438944DA2B8D2AB70009490C /* PawClockUITests */,
+				438944BE2B8D2AB60009490C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		438944BE2B8D2AB60009490C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438944BD2B8D2AB60009490C /* PawClock.app */,
+				438944CD2B8D2AB70009490C /* PawClockTests.xctest */,
+				438944D72B8D2AB70009490C /* PawClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		438944BF2B8D2AB60009490C /* PawClock */ = {
+			isa = PBXGroup;
+			children = (
+				4389450A2B8D2BC20009490C /* Menu */,
+				438944EA2B8D2B400009490C /* Game */,
+				4389450B2B8D2BD10009490C /* HomeView.swift */,
+				438944F72B8D2B400009490C /* GameScene.swift */,
+				438944C02B8D2AB60009490C /* PawClockApp.swift */,
+				438945172B8D2BDF0009490C /* SplashScreenView.swift */,
+				438944C22B8D2AB60009490C /* ContentView.swift */,
+				4389452D2B8D5BF00009490C /* ScheduleView.swift */,
+				438944C42B8D2AB70009490C /* Assets.xcassets */,
+				438944C62B8D2AB70009490C /* Preview Content */,
+			);
+			path = PawClock;
+			sourceTree = "<group>";
+		};
+		438944C62B8D2AB70009490C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				438944C72B8D2AB70009490C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		438944D02B8D2AB70009490C /* PawClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				438944D12B8D2AB70009490C /* PawClockTests.swift */,
+			);
+			path = PawClockTests;
+			sourceTree = "<group>";
+		};
+		438944DA2B8D2AB70009490C /* PawClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				438944DB2B8D2AB70009490C /* PawClockUITests.swift */,
+				438944DD2B8D2AB70009490C /* PawClockUITestsLaunchTests.swift */,
+			);
+			path = PawClockUITests;
+			sourceTree = "<group>";
+		};
+		438944EA2B8D2B400009490C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				438944EB2B8D2B400009490C /* DataManager.swift */,
+				438944ED2B8D2B400009490C /* GameView.swift */,
+				438944EE2B8D2B400009490C /* GameManagement.swift */,
+				438944F02B8D2B400009490C /* AudioManager.swift */,
+				438944F12B8D2B400009490C /* PhysicsCategory.swift */,
+				438944F52B8D2B400009490C /* GameControls.swift */,
+				4389452B2B8D2E300009490C /* GameSceneView.swift */,
+				438944F62B8D2B400009490C /* GameState.swift */,
+				438944FA2B8D2B400009490C /* GameElements.swift */,
+				438944F92B8D2B400009490C /* backgroundmusic.mp3 */,
+				438944EC2B8D2B400009490C /* punch.mp3 */,
+				438944EF2B8D2B400009490C /* Assets.xcassets */,
+				438944F22B8D2B400009490C /* Preview Content */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		438944F22B8D2B400009490C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				438944F32B8D2B400009490C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4389450A2B8D2BC20009490C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				438945232B8D2C270009490C /* NotificationManager.swift */,
+				4389450E2B8D2BD10009490C /* BreakfastView.swift */,
+				4389450C2B8D2BD10009490C /* DinnerView.swift */,
+				438945102B8D2BD10009490C /* FeedPetsView.swift */,
+				438945192B8D2C150009490C /* SharedViewModel.swift */,
+				4389451D2B8D2C1E0009490C /* MealDetails.swift */,
+				4389451C2B8D2C1D0009490C /* PetActivitiesViewModel.swift */,
+				4389451B2B8D2C1D0009490C /* PlayWithPetsView.swift */,
+				438945272B8D2C2F0009490C /* ImagePicker.swift */,
+				438945282B8D2C2F0009490C /* WalkingPetsView.swift */,
+				438945212B8D2C270009490C /* MenuListView.swift */,
+				4389450D2B8D2BD10009490C /* FikaView.swift */,
+				4389450F2B8D2BD10009490C /* LunchView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		438944BC2B8D2AB60009490C /* PawClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438944E12B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClock" */;
+			buildPhases = (
+				438944B92B8D2AB60009490C /* Sources */,
+				438944BA2B8D2AB60009490C /* Frameworks */,
+				438944BB2B8D2AB60009490C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PawClock;
+			productName = PawClock;
+			productReference = 438944BD2B8D2AB60009490C /* PawClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		438944CC2B8D2AB70009490C /* PawClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438944E42B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClockTests" */;
+			buildPhases = (
+				438944C92B8D2AB70009490C /* Sources */,
+				438944CA2B8D2AB70009490C /* Frameworks */,
+				438944CB2B8D2AB70009490C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438944CF2B8D2AB70009490C /* PBXTargetDependency */,
+			);
+			name = PawClockTests;
+			productName = PawClockTests;
+			productReference = 438944CD2B8D2AB70009490C /* PawClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		438944D62B8D2AB70009490C /* PawClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438944E72B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClockUITests" */;
+			buildPhases = (
+				438944D32B8D2AB70009490C /* Sources */,
+				438944D42B8D2AB70009490C /* Frameworks */,
+				438944D52B8D2AB70009490C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				438944D92B8D2AB70009490C /* PBXTargetDependency */,
+			);
+			name = PawClockUITests;
+			productName = PawClockUITests;
+			productReference = 438944D72B8D2AB70009490C /* PawClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		438944B52B8D2AB60009490C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					438944BC2B8D2AB60009490C = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					438944CC2B8D2AB70009490C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 438944BC2B8D2AB60009490C;
+					};
+					438944D62B8D2AB70009490C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 438944BC2B8D2AB60009490C;
+					};
+				};
+			};
+			buildConfigurationList = 438944B82B8D2AB60009490C /* Build configuration list for PBXProject "PawClock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 438944B42B8D2AB60009490C;
+			productRefGroup = 438944BE2B8D2AB60009490C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				438944BC2B8D2AB60009490C /* PawClock */,
+				438944CC2B8D2AB70009490C /* PawClockTests */,
+				438944D62B8D2AB70009490C /* PawClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		438944BB2B8D2AB60009490C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438944C82B8D2AB70009490C /* Preview Assets.xcassets in Resources */,
+				438944FC2B8D2B400009490C /* punch.mp3 in Resources */,
+				438945022B8D2B400009490C /* Preview Assets.xcassets in Resources */,
+				438944FF2B8D2B400009490C /* Assets.xcassets in Resources */,
+				438945082B8D2B400009490C /* backgroundmusic.mp3 in Resources */,
+				438944C52B8D2AB70009490C /* Assets.xcassets in Resources */,
+				438945302B8FBD170009490C /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944CB2B8D2AB70009490C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944D52B8D2AB70009490C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		438944B92B8D2AB60009490C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438945002B8D2B400009490C /* AudioManager.swift in Sources */,
+				438945142B8D2BD10009490C /* BreakfastView.swift in Sources */,
+				438945092B8D2B400009490C /* GameElements.swift in Sources */,
+				438945202B8D2C1E0009490C /* MealDetails.swift in Sources */,
+				438945122B8D2BD10009490C /* DinnerView.swift in Sources */,
+				4389451F2B8D2C1E0009490C /* PetActivitiesViewModel.swift in Sources */,
+				438944C32B8D2AB60009490C /* ContentView.swift in Sources */,
+				438944FE2B8D2B400009490C /* GameManagement.swift in Sources */,
+				4389451E2B8D2C1E0009490C /* PlayWithPetsView.swift in Sources */,
+				438945132B8D2BD10009490C /* FikaView.swift in Sources */,
+				438944FB2B8D2B400009490C /* DataManager.swift in Sources */,
+				438945062B8D2B400009490C /* GameScene.swift in Sources */,
+				438945042B8D2B400009490C /* GameControls.swift in Sources */,
+				438945292B8D2C2F0009490C /* ImagePicker.swift in Sources */,
+				438945162B8D2BD10009490C /* FeedPetsView.swift in Sources */,
+				438945242B8D2C270009490C /* MenuListView.swift in Sources */,
+				438945182B8D2BDF0009490C /* SplashScreenView.swift in Sources */,
+				4389452E2B8D5BF10009490C /* ScheduleView.swift in Sources */,
+				438944FD2B8D2B400009490C /* GameView.swift in Sources */,
+				4389451A2B8D2C150009490C /* SharedViewModel.swift in Sources */,
+				438945052B8D2B400009490C /* GameState.swift in Sources */,
+				438945112B8D2BD10009490C /* HomeView.swift in Sources */,
+				438944C12B8D2AB60009490C /* PawClockApp.swift in Sources */,
+				4389452A2B8D2C2F0009490C /* WalkingPetsView.swift in Sources */,
+				438945012B8D2B400009490C /* PhysicsCategory.swift in Sources */,
+				438945262B8D2C270009490C /* NotificationManager.swift in Sources */,
+				4389452C2B8D2E300009490C /* GameSceneView.swift in Sources */,
+				438945152B8D2BD10009490C /* LunchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944C92B8D2AB70009490C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438944D22B8D2AB70009490C /* PawClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438944D32B8D2AB70009490C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438944DE2B8D2AB70009490C /* PawClockUITestsLaunchTests.swift in Sources */,
+				438944DC2B8D2AB70009490C /* PawClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		438944CF2B8D2AB70009490C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438944BC2B8D2AB60009490C /* PawClock */;
+			targetProxy = 438944CE2B8D2AB70009490C /* PBXContainerItemProxy */;
+		};
+		438944D92B8D2AB70009490C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 438944BC2B8D2AB60009490C /* PawClock */;
+			targetProxy = 438944D82B8D2AB70009490C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		438944DF2B8D2AB70009490C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		438944E02B8D2AB70009490C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		438944E22B8D2AB70009490C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PawClock/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		438944E32B8D2AB70009490C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PawClock/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		438944E52B8D2AB70009490C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PawClock";
+			};
+			name = Debug;
+		};
+		438944E62B8D2AB70009490C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PawClock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PawClock";
+			};
+			name = Release;
+		};
+		438944E82B8D2AB70009490C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PawClock;
+			};
+			name = Debug;
+		};
+		438944E92B8D2AB70009490C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UWW272PKU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeremytyaweisai.PawClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PawClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		438944B82B8D2AB60009490C /* Build configuration list for PBXProject "PawClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438944DF2B8D2AB70009490C /* Debug */,
+				438944E02B8D2AB70009490C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438944E12B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438944E22B8D2AB70009490C /* Debug */,
+				438944E32B8D2AB70009490C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438944E42B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438944E52B8D2AB70009490C /* Debug */,
+				438944E62B8D2AB70009490C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		438944E72B8D2AB70009490C /* Build configuration list for PBXNativeTarget "PawClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438944E82B8D2AB70009490C /* Debug */,
+				438944E92B8D2AB70009490C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 438944B52B8D2AB60009490C /* Project object */;
+}
