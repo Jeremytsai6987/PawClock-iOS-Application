@@ -1,7 +1,6 @@
 # PawClock
 
 - Developer Name: Ya-Wei Tsai
-- CNET ID: jeremyyawei
 - Application Name: PawClock
 - Date: 02/29/2024
 
